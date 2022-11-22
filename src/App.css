@@ -1,0 +1,132 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+.dark-theme {
+  --main-heading:#5f99be;
+  --para-clr: #fff;
+  --btn-bg-color:#5f99be;
+  --btn-text-color:#fff;
+  --bg-clr: #111b20;
+}
+
+.light-theme {
+  --main-heading:#5f99be;
+  --para-clr: #333;
+  --btn-bg-color:#111b20;
+  --btn-text-color:#fff;
+  --bg-clr: #fff;
+}
+
+h1 {
+  font-size: 5rem;
+  color: var(--main-heading);
+}
+p {
+  font-size: 2rem;
+  color: var(--para-clr);
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+a, 
+li {
+  font-size: 1.8rem;
+  color: var(--btn-bg-color);
+}
+
+.btn {
+  padding: 1.6rem 3.2rem;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  margin: 2rem 0;
+}
+section {
+  max-width: 100%;
+  background-color: var(--bg-clr);
+}
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9rem;
+
+} 
+.grid-two-column {
+grid-template-columns: 1fr 1fr;
+}
+
+header {
+  height: 9rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--bg-clr);
+}
+header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+header nav  li {
+  list-style: none;
+}
+.hero-section-data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hero-section-data p {
+  margin: 2rem 0;
+}
+.hero-section-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.hero-section-image img {
+max-width: 60%;
+}
+
+/*  ToggleButton components stype */
+
+.main_div {
+  width: 900px;
+  height: 300px;
+  background-color: #f1f1f1;
+  margin: 7% 20%;
+}
+
+.text_area {
+  margin: 10% 20%;
+}
+.text_area h1 {
+  padding: 10px;
+}
+.button_area {
+  margin-left: 350px;
+}
+.button_area button {
+  width: 120px;
+  height: 40px;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+ border-radius: 6px;
+ font-size: 16px;
+ letter-spacing: 2px;
+}
